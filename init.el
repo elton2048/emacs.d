@@ -40,6 +40,7 @@
 ;; Calls (package-initialize)
 (require 'init-elpa)      ;; Machinery for installing required packages
 (require 'init-exec-path) ;; Set up $PATH
+(require-package 'use-package)
 
 
 ;; Allow users to provide an optional "init-preload-local.el"
@@ -170,6 +171,8 @@
 
 ;; Allow users to provide an optional "init-local" containing personal settings
 (require 'init-local nil t)
+
+;; (require 'init-typescript)
 
 (provide 'init)
 
